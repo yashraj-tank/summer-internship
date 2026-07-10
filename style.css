@@ -140,3 +140,81 @@ p{
 .double{
     border:6px double purple;
 }
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f4f4;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:darkblue;
+    margin-bottom:20px;
+}
+
+h2{
+    color:green;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+/* Flex Container */
+
+.container{
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    padding:20px;
+
+    border:2px solid #333;
+
+    border-radius:10px;
+}
+
+/* Flex Items */
+
+.box{
+
+    width:120px;
+
+    height:120px;
+
+    background:#007BFF;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:10px;
+}
