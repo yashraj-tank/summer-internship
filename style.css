@@ -218,3 +218,90 @@ p{
 
     border-radius:10px;
 }
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f4f4;
+    color:#333;
+    padding:20px;
+}
+
+/* Header */
+header{
+    text-align:center;
+    background:#007BFF;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.intro{
+    margin:30px 0;
+}
+
+/* Card Container */
+.container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+/* Cards */
+.card{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer{
+    margin-top:30px;
+    text-align:center;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width:768px){
+
+    body{
+        background:#eef7ff;
+    }
+
+    .container{
+        flex-wrap:wrap;
+    }
+
+    .card{
+        flex:1 1 45%;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width:480px){
+
+    body{
+        background:#fff8e7;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
