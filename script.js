@@ -93,3 +93,38 @@ function showDate(){
     today;
 
 }
+// Change Text
+function changeText() {
+    document.getElementById("text").innerHTML =
+        "The paragraph has been changed using DOM Manipulation.";
+}
+
+// Change Text Color
+function changeColor() {
+    document.getElementById("text").style.color = "blue";
+}
+
+// Hide Text
+function hideText() {
+    document.getElementById("text").style.display = "none";
+}
+
+// Show Text
+function showText() {
+    document.getElementById("text").style.display = "block";
+}
+
+// Change Image
+function changeImage() {
+    document.getElementById("image").src =
+        "https://via.placeholder.com/250x150?text=New+Image";
+}
+
+// Display User Input
+function displayName() {
+
+    let username = document.getElementById("name").value;
+
+    document.getElementById("result").innerHTML =
+        "Welcome, " + username + "!";
+}
