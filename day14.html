@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 - JavaScript Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Day 14 Internship Task</h1>
+    <h2>JavaScript Event Handling</h2>
+
+    <div class="container">
+
+        <button onclick="showMessage()">Click Event</button>
+
+        <br><br>
+
+        <input type="text"
+               id="name"
+               placeholder="Type your name"
+               onkeyup="showTyping()">
+
+        <p id="typing"></p>
+
+        <br>
+
+        <div class="box"
+             onmouseover="mouseOver()"
+             onmouseout="mouseOut()">
+            Hover Over Me
+        </div>
+
+        <br>
+
+        <form onsubmit="return validateForm()">
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter Email">
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -128,3 +128,53 @@ function displayName() {
     document.getElementById("result").innerHTML =
         "Welcome, " + username + "!";
 }
+// Click Event
+function showMessage(){
+
+    alert("Button Click Event Triggered!");
+
+}
+
+// Key Up Event
+function showTyping(){
+
+    let name=document.getElementById("name").value;
+
+    document.getElementById("typing").innerHTML =
+    "You typed: " + name;
+
+}
+
+// Mouse Over Event
+function mouseOver(){
+
+    document.querySelector(".box").style.background="green";
+
+}
+
+// Mouse Out Event
+function mouseOut(){
+
+    document.querySelector(".box").style.background="#007BFF";
+
+}
+
+// Form Submit Event
+function validateForm(){
+
+    let email=document.getElementById("email").value;
+
+    if(email==""){
+
+        alert("Please enter your email.");
+
+        return false;
+
+    }
+
+    document.getElementById("result").innerHTML =
+    "Form Submitted Successfully!";
+
+    return false;
+
+}

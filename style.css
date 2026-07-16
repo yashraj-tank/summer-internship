@@ -468,3 +468,56 @@ input{
     width:250px;
     margin-top:15px;
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    color:darkblue;
+    margin-bottom:15px;
+}
+
+h2{
+    color:green;
+    margin-bottom:20px;
+}
+
+.container{
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+input{
+    padding:10px;
+    width:250px;
+}
+
+.box{
+    width:220px;
+    margin:20px auto;
+    padding:20px;
+    background:#007BFF;
+    color:white;
+    border-radius:8px;
+}
