@@ -178,3 +178,54 @@ function validateForm(){
     return false;
 
 }
+function validateForm(){
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+    let message = document.getElementById("message");
+
+    if(name === ""){
+        message.innerHTML = "Name is required.";
+        message.style.color = "red";
+        return false;
+    }
+
+    if(email === ""){
+        message.innerHTML = "Email is required.";
+        message.style.color = "red";
+        return false;
+    }
+
+    if(!email.includes("@")){
+        message.innerHTML = "Enter a valid email address.";
+        message.style.color = "red";
+        return false;
+    }
+
+    if(mobile.length !== 10 || isNaN(mobile)){
+        message.innerHTML = "Enter a valid 10-digit mobile number.";
+        message.style.color = "red";
+        return false;
+    }
+
+    if(password.length < 6){
+        message.innerHTML = "Password must be at least 6 characters.";
+        message.style.color = "red";
+        return false;
+    }
+
+    if(password !== confirmPassword){
+        message.innerHTML = "Passwords do not match.";
+        message.style.color = "red";
+        return false;
+    }
+
+    message.innerHTML = "Form submitted successfully!";
+    message.style.color = "green";
+
+    return false; // Prevent actual submission for demo
+}

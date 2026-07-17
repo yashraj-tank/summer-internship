@@ -521,3 +521,69 @@ input{
     color:white;
     border-radius:8px;
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:400px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:darkblue;
+    margin-bottom:10px;
+}
+
+h2{
+    text-align:center;
+    color:green;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#message{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+}
